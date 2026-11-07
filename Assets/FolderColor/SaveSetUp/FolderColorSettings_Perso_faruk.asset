@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55acf6011891301458a2c736f3dd2eb3, type: 3}
+  m_Name: FolderColorSettings_Perso_faruk
+  m_EditorClassIdentifier: FolderColor.Editor::FolderColor.Editor.FolderColorDatabase
+  Mode: 1
+  UserId: 
+  IconEntries:
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7f9df7b447028a3409c6854dd3ffa1b1
+    IconPath: AbaseFolder.png
+    IconColor: {r: 1, g: 0, b: 0, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 7c8ac22cff4cbf944a4d5fed2c050865
+    IconPath: MeshFolder.png
+    IconColor: {r: 0.5450981, g: 0.2705882, b: 0.07450981, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 244202c6a6878bb408a57b2173e30969
+    IconPath: AbaseFolder.png
+    IconColor: {r: 0, g: 1, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: c98f95e2bc85569488f157b2eb9255b8
+    IconPath: CodeFolder.png
+    IconColor: {r: 0.6470588, g: 0.1647059, b: 0.1647059, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: b5fac564b8dae9c4ab3c4fee90aac01f
+    IconPath: FavoryFolder.png
+    IconColor: {r: 0.98, g: 0.75, b: 0.14, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 6519412026f258f43aa98bf9dab80e00
+    IconPath: GroupedPackageFolder.png
+    IconColor: {r: 0.63, g: 0.38, b: 0.95, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: d907d1f82ec5f0041b04598873ff126a
+    IconPath: TextureFolder.png
+    IconColor: {r: 0.06, g: 0.73, b: 0.85, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 729281495762bc548a01d0794d083faf
+    IconPath: AnimFolder.png
+    IconColor: {r: 0.13, g: 0.77, b: 0.45, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 4e5c1565567c4fd488bc915af915efe8
+    IconPath: DataGridFolder.png
+    IconColor: {r: 0.23, g: 0.51, b: 0.96, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: f9ec557856e4d9c48a3b3049c8f6ebc6
+    IconPath: PrefabFolder.png
+    IconColor: {r: 0.18, g: 0.55, b: 1, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 5afe2a663915bd543b82ae7903dd6ef2
+    IconPath: ShaderFolder.png
+    IconColor: {r: 0.93, g: 0.28, b: 0.6, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 07d92f043448550489ece63d6205a76c
+    IconPath: SoundFolder.png
+    IconColor: {r: 0.98, g: 0.45, b: 0.09, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: a67a359643e82bf4eb0ded3eed32091c
+    IconPath: MusicFolder.png
+    IconColor: {r: 1, g: 0.62, b: 0.2, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: bbdb2d443432e5241a1b86676c68e508
+    IconPath: SoundFolder.png
+    IconColor: {r: 0.95, g: 0.45, b: 0.15, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: d12e83e462b7dfa4ca5c82ce4c1bdaa1
+    IconPath: SoundFolder.png
+    IconColor: {r: 0.85, g: 0.25, b: 0.15, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 5ccef0f9adfc31a4695384293c36b5c0
+    IconPath: FileFolder.png
+    IconColor: {r: 0.08, g: 0.72, b: 0.52, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: 4cb65e7ec63968743bc321e8892141fe
+    IconPath: FileFolder.png
+    IconColor: {r: 0.92, g: 0.82, b: 0.42, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  - Guid: d67b3b869d5471e4f9673afeddb6bbc5
+    IconPath: ParameterFolder.png
+    IconColor: {r: 0.55, g: 0.6, b: 0.68, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
+  Entries: []
