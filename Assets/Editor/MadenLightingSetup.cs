@@ -5,13 +5,14 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using Project.Systems;
 
 namespace MyEditorTools
 {
     [InitializeOnLoad]
     public static class MadenLightingSetup
     {
-        private const string DoneKey = "Maden_Lighting_Setup_Done_v2";
+        private const string DoneKey = "Maden_Lighting_Setup_Done_v3";
 
         static MadenLightingSetup()
         {
@@ -53,8 +54,8 @@ namespace MyEditorTools
             RenderSettings.fogStartDistance = 4.0f;
             RenderSettings.fogEndDistance = 35.0f;
 
-            // 3. Tünel Tavan Lambaları (Sıcak Akkor / Tungsten Fener Işıkları)
-            Color warmLanternColor = new Color(1.0f, 0.72f, 0.38f); // 2700K sıcak sarı/kehribar
+            // 3. Tünel Tavan Lambaları (Gerçek maden feneri: ılık amber, abartısız)
+            Color warmLanternColor = new Color(1.0f, 0.82f, 0.60f);
 
             foreach (var l in lights)
             {
@@ -63,7 +64,7 @@ namespace MyEditorTools
                     Undo.RecordObject(l, "Configure Mine Lantern");
                     l.type = LightType.Point;
                     l.color = warmLanternColor;
-                    l.intensity = 18.0f;
+                    l.intensity = 14.0f;
                     l.range = 10.0f;
                     l.shadows = LightShadows.Soft;
                     l.shadowStrength = 0.9f;
@@ -81,7 +82,7 @@ namespace MyEditorTools
                 Undo.RegisterCreatedObjectUndo(existingBgLight, "Create Mine Background Light");
                 var bgLight = existingBgLight.AddComponent<Light>();
                 bgLight.type = LightType.Point;
-                bgLight.color = new Color(0.18f, 0.58f, 0.85f); // Soğuk turkuaz / mavi parıltı
+                bgLight.color = new Color(0.28f, 0.58f, 0.80f); // Soğuk ama doğal mavi parıltı
                 bgLight.intensity = 15.0f;
                 bgLight.range = 16.0f;
                 bgLight.shadows = LightShadows.Soft;
@@ -94,7 +95,7 @@ namespace MyEditorTools
                 var bgLight = existingBgLight.GetComponent<Light>();
                 if (bgLight != null)
                 {
-                    bgLight.color = new Color(0.18f, 0.58f, 0.85f);
+                    bgLight.color = new Color(0.28f, 0.58f, 0.80f);
                     bgLight.intensity = 15.0f;
                     bgLight.range = 16.0f;
                     bgLight.shadows = LightShadows.Soft;
@@ -154,6 +155,13 @@ namespace MyEditorTools
                     camData.antialiasing = AntialiasingMode.SubpixelMorphologicalAntiAliasing;
                     camData.volumeLayerMask = ~0; // Tüm katmanlardaki Volume'leri algılasın
                 }
+
+                // 8. Maden Atmosferi (Toz zerreleri + Lamba titremesi) — kamera yoksa oyuncuya eklenir
+                if (mainCam.GetComponent<MadenAtmosfer>() == null)
+                {
+                    Undo.AddComponent<MadenAtmosfer>(mainCam.gameObject);
+                    Debug.Log("<color=cyan>[Maden Lighting]</color> Kameraya <b>MadenAtmosfer</b> eklendi (toz + lamba titremesi).");
+                }
             }
 
             // Sahneyi kaydet
@@ -194,39 +202,39 @@ namespace MyEditorTools
             bloom.scatter.overrideState = true;
             bloom.scatter.value = 0.7f;
             bloom.tint.overrideState = true;
-            bloom.tint.value = new Color(1.0f, 0.82f, 0.60f);
+            bloom.tint.value = new Color(1.0f, 0.86f, 0.70f);
 
             // 3. Color Adjustments (Kömür madeni kontrastı ve ton ayarı)
             var colorAdjustments = AddComponentToProfile<ColorAdjustments>(profile);
             colorAdjustments.postExposure.overrideState = true;
-            colorAdjustments.postExposure.value = 0.15f;
+            colorAdjustments.postExposure.value = -0.15f;
             colorAdjustments.contrast.overrideState = true;
             colorAdjustments.contrast.value = 24.0f; // Güçlü gölgeler
             colorAdjustments.saturation.overrideState = true;
             colorAdjustments.saturation.value = 6.0f;
 
-            // 4. White Balance (Hafif sıcaklık)
+            // 4. White Balance (Nötr — renk abartısı yok)
             var whiteBalance = AddComponentToProfile<WhiteBalance>(profile);
             whiteBalance.temperature.overrideState = true;
-            whiteBalance.temperature.value = 14.0f;
+            whiteBalance.temperature.value = 5.0f;
             whiteBalance.tint.overrideState = true;
-            whiteBalance.tint.value = -3.0f;
+            whiteBalance.tint.value = -1.0f;
 
             // 5. Split Toning (Ön plandaki sıcak sarı vs arka plandaki soğuk mavi ayrımı)
             var splitToning = AddComponentToProfile<SplitToning>(profile);
             splitToning.shadows.overrideState = true;
-            splitToning.shadows.value = new Color(0.12f, 0.20f, 0.32f); // Gölgelerde soğuk derinlik
+            splitToning.shadows.value = new Color(0.14f, 0.22f, 0.30f); // Gölgelerde soğuk derinlik
             splitToning.highlights.overrideState = true;
-            splitToning.highlights.value = new Color(1.0f, 0.80f, 0.48f); // Işıklarda sıcak kehribar
+            splitToning.highlights.value = new Color(1.0f, 0.84f, 0.62f); // Işıklarda ılık amber
             splitToning.balance.overrideState = true;
-            splitToning.balance.value = -8.0f;
+            splitToning.balance.value = -4.0f;
 
             // 6. Vignette (Tünel klostrofobisi ve kenar karartması)
             var vignette = AddComponentToProfile<Vignette>(profile);
             vignette.intensity.overrideState = true;
-            vignette.intensity.value = 0.38f;
+            vignette.intensity.value = 0.44f;
             vignette.smoothness.overrideState = true;
-            vignette.smoothness.value = 0.45f;
+            vignette.smoothness.value = 0.50f;
             vignette.rounded.overrideState = true;
             vignette.rounded.value = false;
 

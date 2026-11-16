@@ -18,6 +18,17 @@ namespace MyEditorTools
         [MenuItem("Tools/Lighting/Optimize Mine Light Shadows")]
         public static void OptimizeShadows()
         {
+            // Play modunda sahneyi işaretleyemeyiz — menü elle çağrılırsa bile güvenli çık
+            if (Application.isPlaying)
+            {
+                Debug.LogWarning("<color=yellow>[Shadow Optimizer]</color> Play modundayken çalışmaz. Önce oyunu durdur.");
+                return;
+            }
+
+            // Oturum başına yalnızca bir kez otomatik çalış
+            if (SessionState.GetBool(DoneKey, false)) return;
+            SessionState.SetBool(DoneKey, true);
+
             var lights = Object.FindObjectsByType<Light>(FindObjectsSortMode.None);
             int shadowCount = 0;
             foreach (var l in lights)

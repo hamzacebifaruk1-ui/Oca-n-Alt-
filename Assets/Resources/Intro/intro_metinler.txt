@@ -1,0 +1,23 @@
+=== SLAYT 1 ===
+BASLIK: OCAĞIN ALTI
+FOTO: intro_foto1
+METIN: Zonguldak  •  Kara Elmas Ocağı  •  Kasım 1996| |"Karanlıkta duyduğun her ses sana yol göstermez.|Işık ise neyin gerçekten orada olduğunu söyler."
+IPUCU: [ E ]  Devam
+
+=== SLAYT 2 ===
+BASLIK:
+FOTO: intro_foto2
+METIN: Kadir Demirci, 1989'da kaybolan babasının izini sürmek için|yeniden açılması planlanan Kara Elmas Ocağı'na denetime iner.| |Beş bölüm boyunca gerçek kayıtları bulacak,|sesleri lambasıyla sınayacak ve sonunda kararı verecek.
+IPUCU: [ E ]  Devam
+
+=== SLAYT 3 ===
+BASLIK:
+FOTO: intro_foto3
+METIN: "Yeraltında kulaklarına güvenme.|Gözünü lambaya ver."| |— Osman Demirci
+IPUCU: [ E ]  Devam
+
+=== SLAYT 4 ===
+BASLIK: KONTROLLER
+FOTO:
+METIN: WASD / Oklar   Yürü        Shift   Koş|C   Eğil (aç/kapa)        Ctrl   Eğil (basılı tut)|Boşluk   Zıpla             E   İncele|ESC   Fare imlecini serbest bırak
+IPUCU: [ E ]  Ocağa İn

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9eb77f09ba71f44a418142e04aaf94, type: 3}
+  m_Name: Evidence_AsilKayit
+  m_EditorClassIdentifier: Assembly-CSharp::Project.Data.EvidenceItem
+  id: asil_kayit
+  title: "As\u0131l Kay\u0131t Paketi"
+  description: "K\xF6r \xF6l\xE7\xFCm odas\u0131n\u0131n duvar\u0131na \xF6r\xFClm\xFC\u015F
+    b\xF6lmeden \xE7\u0131kan paket: Hasan'\u0131n imzal\u0131 gaz \xE7izelgeleri
+    ve kilit de\u011Fi\u015Fim emri. En arkadaki k\xE2\u011F\u0131tta \u015Fu yaz\u0131yor:
+    \"O\u011Flumun bunlar\u0131 g\xF6rmesini istemedim.\""
+  chapter: 4
+  isKeyEvidence: 1
