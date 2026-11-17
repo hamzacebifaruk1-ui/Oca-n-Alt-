@@ -1,23 +1,41 @@
 === SLAYT 1 ===
-BASLIK: OCAĞIN ALTI
-FOTO: intro_foto1
-METIN: Zonguldak  •  Kara Elmas Ocağı  •  Kasım 1996| |"Karanlıkta duyduğun her ses sana yol göstermez.|Işık ise neyin gerçekten orada olduğunu söyler."
-IPUCU: [ E ]  Devam
+BASLIK:
+FOTO: intro_gorsel1
+SES: intro_ses01_maden
+METIN: Zonguldak  —  Kara Elmas Ocağı  —  Kasım 1996.
 
 === SLAYT 2 ===
 BASLIK:
-FOTO: intro_foto2
-METIN: Kadir Demirci, 1989'da kaybolan babasının izini sürmek için|yeniden açılması planlanan Kara Elmas Ocağı'na denetime iner.| |Beş bölüm boyunca gerçek kayıtları bulacak,|sesleri lambasıyla sınayacak ve sonunda kararı verecek.
-IPUCU: [ E ]  Devam
+FOTO: intro_gorsel2
+SES: intro_ses02_vardiya
+METIN: Her vardiya aynı sözle başlardı: "Herkes döner."   1989'da o söz bozuldu.
 
 === SLAYT 3 ===
 BASLIK:
-FOTO: intro_foto3
-METIN: "Yeraltında kulaklarına güvenme.|Gözünü lambaya ver."| |— Osman Demirci
-IPUCU: [ E ]  Devam
+FOTO: intro_gorsel3
+SES: intro_ses03_ekipman
+METIN: Yeraltının kuralları eski ama değişmez: kask, fener, yağ... ve sabır.
 
 === SLAYT 4 ===
-BASLIK: KONTROLLER
-FOTO:
-METIN: WASD / Oklar   Yürü        Shift   Koş|C   Eğil (aç/kapa)        Ctrl   Eğil (basılı tut)|Boşluk   Zıpla             E   İncele|ESC   Fare imlecini serbest bırak
-IPUCU: [ E ]  Ocağa İn
+BASLIK:
+FOTO: intro_gorsel4
+SES: intro_ses04_kapi
+METIN: Paslı kapıda asılı kayıt: kapanıştan iki gün önce alınmış.
+
+=== SLAYT 5 ===
+BASLIK:
+FOTO: intro_gorsel5
+SES: intro_ses05_geridekalanlar
+METIN: 1989'un geride bıraktıkları hâlâ rayların ucunda bekliyor.
+
+=== SLAYT 6 ===
+BASLIK:
+FOTO: intro_gorsel6
+SES: intro_ses06_hasan
+METIN: Soyunma odasındaki dolapta bir isim: Hasan.
+
+=== SLAYT 7 ===
+BASLIK:
+FOTO: intro_gorsel7
+SES: intro_ses07_kadir1996
+METIN: "Babamın sesini duyarsam onu tanırım."   İniş başlıyor.

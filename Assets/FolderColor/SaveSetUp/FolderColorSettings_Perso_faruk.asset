@@ -205,4 +205,9 @@ MonoBehaviour:
     IconColor: {r: 0.55, g: 0.6, b: 0.68, a: 1}
     HighlightName: 0
     HighlightChildren: 0
+  - Guid: b0f4cd157b823de49bb1790c7128cf48
+    IconPath: TextureFolder.png
+    IconColor: {r: 0.1333333, g: 0.5450981, b: 0.1333333, a: 1}
+    HighlightName: 0
+    HighlightChildren: 0
   Entries: []

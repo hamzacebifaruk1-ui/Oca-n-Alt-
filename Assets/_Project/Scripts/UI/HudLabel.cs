@@ -36,11 +36,14 @@ namespace Project.UI
             bool tmpAvailable = false;
             try { tmpAvailable = TMP_Settings.defaultFontAsset != null; } catch { tmpAvailable = false; }
 
+            // Sahne içinden geliyorsa _rect kayıt edilmediği için null olabilir — kendimiz bulalım
+            if (_rect == null) _rect = GetComponent<RectTransform>();
+
             if (tmpAvailable)
             {
                 _tmp = gameObject.AddComponent<TextMeshProUGUI>();
                 _tmp.raycastTarget = false;
-                _tmp.enableWordWrapping = true;
+                _tmp.textWrappingMode = TextWrappingModes.Normal; // (eski adı: enableWordWrapping)
             }
             else
             {
@@ -61,6 +64,7 @@ namespace Project.UI
 
         public Color TextColor
         {
+            get => _tmp != null ? _tmp.color : _legacy.color;
             set { if (_tmp != null) _tmp.color = value; else if (_legacy != null) _legacy.color = value; }
         }
 
@@ -91,6 +95,6 @@ namespace Project.UI
             }
         }
 
-        public RectTransform Rect => _rect;
+        public RectTransform Rect => _rect != null ? _rect : (_rect = GetComponent<RectTransform>());
     }
 }
